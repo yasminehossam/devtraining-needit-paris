@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="HeyNeedIt" max_length="40" name="x_58872_needit_heyneedit" type="collection">
+    <element audit="true" extends="task" label="HeyNeedIt" max_length="40" name="x_58872_needit_heyneedit" sizeclass="3" type="collection">
         <element label="HEEE" max_length="40" name="heee" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
